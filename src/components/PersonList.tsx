@@ -9,9 +9,9 @@ const PersonList = (props: PersonListProps) => {
     <>
       <div>
         PersonList
-        {props.names.map((name) => {
+        {props.names.map((name, i) => {
           return (
-            <h3>
+            <h3 key={i}>
               {name.firstName} - {name.lastName}
             </h3>
           );
